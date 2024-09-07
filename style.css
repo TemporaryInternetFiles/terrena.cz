@@ -138,6 +138,7 @@ video {
     font-size: 4em;
     margin-top: 2em;
     margin-bottom: 1em;
+    color: #ffffff;
 }
 
 #topografie .wrapper p, #geoinformatika .wrapper p, #kartografie .wrapper p {
@@ -146,6 +147,7 @@ video {
     font-size: 1.35em;
     margin-top: 1em;
     padding: 0 2em;
+    color: #ffffff;
 }
 
 @media all and (max-width: 1280px) {
@@ -182,7 +184,7 @@ video {
 #geoinformatika {
     position: relative;
 
-    background: url("images/kartografie.png") no-repeat;
+    background: url("images/3D.jpg") no-repeat;
     background-size: cover;
     z-index: 7100;
 }
@@ -190,25 +192,24 @@ video {
 #kartografie {
     position: relative;
 
-    background: url("images/3D.jpg") no-repeat;
+    background: url("images/kartografie.png") no-repeat;
     background-size: cover;
     z-index: 7200;
 }
 
 #topografie .wrapper {
     background: rgba(52, 89, 163, 0.75);
-    color: #ffffff;
     z-index: 7010;
 }
 
 #geoinformatika .wrapper {
     background: rgba(97, 163, 117, 0.85);
+    background: rgba(0, 0, 0, 0.75);
     z-index: 7110;
 }
 
 #kartografie .wrapper {
     background: rgba(216, 39, 22, 0.75);
-    color: #ffffff;
     z-index: 7210;
 }
 
