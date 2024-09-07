@@ -239,6 +239,7 @@ video {
 
 #footer .wrapper td.right {
     line-height: 48px;
+    padding-left: 2em;
 }
 
 #footer a:link, #footer a:visited {
