@@ -218,6 +218,7 @@ video {
     position: relative;
     background: #333333;
     z-index: 7300;
+    color: #cccccc;
 }
 
 #footer .wrapper {
@@ -238,6 +239,14 @@ video {
 
 #footer .wrapper td.right {
     line-height: 48px;
+}
+
+#footer a:link, #footer a:visited {
+    color: #cccccc;
+}
+
+#footer a:hover {
+    color: #61a375;
 }
 
 .leftAlign {
