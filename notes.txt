@@ -1,0 +1,7 @@
+Kartografie a tvorba map, digitální topografické snímkování a skenování, letecké měřící a panoramatické snímkování, analýza a zpracování získaných dat, remodelace virtuální krajiny
+
+1. topografie - digitální topografické skenování
+
+2. geoinformatika - analýza a zpracování dat
+
+3. kartografie - letecké snímkování a kartografie
