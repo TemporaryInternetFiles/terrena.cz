@@ -263,6 +263,10 @@ video {
     height: 32px;
 }
 
+#footer .wrapper td {
+    width: 50%;
+}
+
 #footer .wrapper td.right {
     line-height: 48px;
     padding-left: 2em;
