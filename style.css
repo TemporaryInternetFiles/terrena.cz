@@ -176,7 +176,7 @@ video {
         margin-top: 1em;
     }
 
-    #header .menu, .canHide {
+    #header .menu, .canHide, #footer .wrapper td.right {
         display: none;
     }
 }
