@@ -184,7 +184,7 @@ video {
 #geoinformatika {
     position: relative;
 
-    background: url("images/3D.jpg") no-repeat;
+    background: url("images/data-visualization-large-scaled.jpg") no-repeat;
     background-size: cover;
     z-index: 7100;
 }
@@ -203,8 +203,7 @@ video {
 }
 
 #geoinformatika .wrapper {
-    background: rgba(97, 163, 117, 0.85);
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(97, 163, 117, 0.8);
     z-index: 7110;
 }
 
