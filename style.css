@@ -56,20 +56,43 @@ table, tr, td {
     z-index: 8000;
 }
 
-#header .menu {
+#header .menu, #header .mobileMenu {
     vertical-align: middle;
     color: #61a375;
 }
 
-#header .menu a:link, #header .menu a:visited {
+#header .menu a:link, #header .menu a:visited, #header .mobileMenu a:link, #header .mobileMenu a:visited, #mobileMenuLinks li a:link, #mobileMenuLinks li a:visited {
     color: #61a375;
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
 }
-#header .menu a:hover {
+#header .menu a:hover, #mobileMenuLinks li a:hover {
     color: #3459a3;
     text-decoration: underline;
+}
+#header .mobileMenu a:hover {
+    color: #3459a3;
+    text-decoration: none;
+}
+
+#header .mobileMenu {
+    position: relative;
+    display: none;
+}
+#mobileMenuLinks {
+    position: absolute;
+    top: 3.5em;
+    right: 0;
+    display: none;
+}
+#mobileMenuLinks li {
+    list-style-type: none;
+    background: #ffffff;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 0.5em;
+    text-align: right;
 }
 
 .wrapper {
@@ -91,7 +114,6 @@ table, tr, td {
 }
 
 .wrapper td {
-    width: 50%;
     vertical-align: text-top;
 }
 
@@ -167,7 +189,8 @@ video {
 
     #geoinformatika .wrapper h1, #kartografie .wrapper h1 {
         font-size: 2.5em;
-        margin-top: -2em;
+        /*margin-top: -2em;*/
+        margin-top: -0.5em;
         margin-bottom: 0.25em;
     }
 
@@ -178,6 +201,10 @@ video {
 
     #header .menu, .canHide, #footer .wrapper td.right {
         display: none;
+    }
+
+    #header .mobileMenu {
+        display: table-cell;
     }
 }
 

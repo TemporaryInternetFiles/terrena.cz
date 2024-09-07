@@ -25,8 +25,16 @@
         <td class="right menu">
           <a href="#topografie">topografie</a>&nbsp;&bull;&nbsp;<a href="#geoinformatika">geoinformatika</a>&nbsp;&bull;&nbsp;<a href="#kartografie">kartografie</a>
         </td>
+        <td class="right mobileMenu">
+          <a href="#" id="menuToggle">☰</a>
+        </td>
       </tr>
     </table>
+    <ul id="mobileMenuLinks">
+      <li><a href="#topografie">topografie</a></li>
+      <li><a href="#geoinformatika">geoinformatika</a></li>
+      <li><a href="#kartografie">kartografie</a></li>
+    </ul>
   </div>
 
   <div id="topografie" class="contentSection">
@@ -87,5 +95,34 @@
       </tr>
     </table>
   </div>
+
+  <script>
+    // Najdeme potřebné elementy
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenuLinks = document.getElementById('mobileMenuLinks');
+    const menuLinks = mobileMenuLinks.querySelectorAll('a');
+
+    // Funkce na zobrazení/skrytí menu
+    menuToggle.addEventListener('click', function(event) {
+      event.preventDefault();
+      // Přepínáme třídu pro zobrazení/skrytí
+      mobileMenuLinks.style.display = mobileMenuLinks.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Skrytí menu při kliknutí mimo něj
+    document.addEventListener('click', function(event) {
+      // Pokud klikneme mimo menu a mimo ikonu menuToggle
+      if (!mobileMenuLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+        mobileMenuLinks.style.display = 'none';
+      }
+    });
+
+    // Skrytí menu po kliknutí na odkaz uvnitř menu
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileMenuLinks.style.display = 'none';
+      });
+    });
+  </script>
 </body>
 </html>
