@@ -157,9 +157,15 @@ video {
 }
 
 @media all and (max-width: 600px) {
-    #topografie .wrapper h1, #geoinformatika .wrapper h1, #kartografie .wrapper h1 {
+    #topografie .wrapper h1 {
         font-size: 2.5em;
         margin-top: -0.5em;
+        margin-bottom: 0.25em;
+    }
+
+    #geoinformatika .wrapper h1, #kartografie .wrapper h1 {
+        font-size: 2.5em;
+        margin-top: -2em;
         margin-bottom: 0.25em;
     }
 
@@ -168,7 +174,7 @@ video {
         margin-top: 1em;
     }
 
-    #header .menu {
+    #header .menu, .canHide {
         display: none;
     }
 }
