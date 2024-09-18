@@ -17,6 +17,13 @@
     font-weight: 400;
     font-style: italic;
 }
+
+:root {
+    --blue: #3459a3;
+    --green: #61a375;
+    --company:var(--green);
+  }
+
   
 
 html, body {
@@ -25,7 +32,7 @@ html, body {
     margin: 0;
     padding: 0;
 
-    background: #61a375;
+    background: var(--company);
 
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
@@ -51,28 +58,28 @@ table, tr, td {
     padding: 10px 0;
 
     background: #ffffff;
-    border-bottom: solid 5px #61a375;
+    border-bottom: solid 5px var(--company);
 
     z-index: 8000;
 }
 
 #header .menu, #header .mobileMenu {
     vertical-align: middle;
-    color: #61a375;
+    color: var(--company);
 }
 
 #header .menu a:link, #header .menu a:visited, #header .mobileMenu a:link, #header .mobileMenu a:visited, #mobileMenuLinks li a:link, #mobileMenuLinks li a:visited {
-    color: #61a375;
+    color: var(--company);
     text-transform: uppercase;
     font-weight: 700;
     text-decoration: none;
 }
 #header .menu a:hover, #mobileMenuLinks li a:hover {
-    color: #3459a3;
+    color: var(--blue);
     text-decoration: underline;
 }
 #header .mobileMenu a:hover {
-    color: #3459a3;
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -277,7 +284,7 @@ video {
 }
 
 #footer a:hover {
-    color: #61a375;
+    color: var(--company);
 }
 
 .leftAlign {
