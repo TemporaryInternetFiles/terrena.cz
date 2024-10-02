@@ -152,7 +152,7 @@ video {
     z-index: 7005;
 }
 
-#topografie .wrapper, #geoinformatika .wrapper, #kartografie .wrapper {
+#topografie .wrapper, #geoinformatika .wrapper, #kartografie .wrapper, #blog .wrapper {
     position: absolute;
     left: 0;
     right: 0;
@@ -162,7 +162,7 @@ video {
     text-align: center;
 }
 
-#topografie .wrapper h1, #geoinformatika .wrapper h1, #kartografie .wrapper h1 {
+#topografie .wrapper h1, #geoinformatika .wrapper h1, #kartografie .wrapper h1, #blog .wrapper h1 {
     text-transform: uppercase;
     font-size: 4em;
     margin-top: 2em;
@@ -170,7 +170,7 @@ video {
     color: #ffffff;
 }
 
-#topografie .wrapper p, #geoinformatika .wrapper p, #kartografie .wrapper p {
+#topografie .wrapper p, #geoinformatika .wrapper p, #kartografie .wrapper p, #blog .wrapper p {
     max-width: 1100px;
     margin: auto;
     font-size: 1.35em;
@@ -180,7 +180,7 @@ video {
 }
 
 @media all and (max-width: 1280px) {
-    #topografie .wrapper h1, #geoinformatika .wrapper h1, #kartografie .wrapper h1 {
+    #topografie .wrapper h1, #geoinformatika .wrapper h1, #kartografie .wrapper h1, #blog .wrapper h1 {
         font-size: 3em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
@@ -194,14 +194,14 @@ video {
         margin-bottom: 0.25em;
     }
 
-    #geoinformatika .wrapper h1, #kartografie .wrapper h1 {
+    #geoinformatika .wrapper h1, #kartografie .wrapper h1, #blog .wrapper h1 {
         font-size: 2.5em;
         /*margin-top: -2em;*/
         margin-top: -0.5em;
         margin-bottom: 0.25em;
     }
 
-    #topografie .wrapper p, #geoinformatika .wrapper p, #kartografie .wrapper p {
+    #topografie .wrapper p, #geoinformatika .wrapper p, #kartografie .wrapper p, #blog .wrapper p {
         font-size: 1.15em;
         margin-top: 1em;
     }
@@ -231,6 +231,15 @@ video {
     z-index: 7200;
 }
 
+#blog {
+    position: relative;
+
+    background: url("images/signal-2024-09-06-192247_002.jpg") no-repeat;
+    background-size: cover;
+    background-position: top 40% right 0;;
+    z-index: 7300;
+}
+
 #topografie .wrapper {
     background: rgba(52, 89, 163, 0.75);
     z-index: 7010;
@@ -246,16 +255,25 @@ video {
     z-index: 7210;
 }
 
+#blog .wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 7310;
+}
+
+#blog .wrapper pre {
+    color: #ffffff;
+}
+
 #footer {
     padding: 2em 0em 1em 0em;
     position: relative;
     background: #333333;
-    z-index: 7300;
+    z-index: 7700;
     color: #cccccc;
 }
 
 #footer .wrapper {
-    z-index: 7310;
+    z-index: 7710;
 }
 
 #footer img {
