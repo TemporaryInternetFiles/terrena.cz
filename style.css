@@ -80,6 +80,9 @@ table, tr, td {
     color: var(--blue);
     text-decoration: underline;
 }
+#header .mobileMenu a:link, #header .mobileMenu a:visited {
+    padding: 0.5em;
+}
 #header .mobileMenu a:hover {
     color: var(--blue);
     text-decoration: none;
@@ -100,8 +103,26 @@ table, tr, td {
     background: #ffffff;
     height: 2em;
     line-height: 2em;
-    padding: 0 0.5em;
+    padding: 0.5em 1em;
     text-align: right;
+}
+#mobileMenuLinks li {
+    border-top: solid 1px var(--company);
+    border-bottom: solid 1px var(--company);
+    border-left: solid 2px var(--company);
+    border-right: solid 2px var(--company);
+}
+#mobileMenuLinks li:first-of-type {
+    border-top: solid 2px var(--company);
+    border-bottom: solid 1px var(--company);
+    border-left: solid 2px var(--company);
+    border-right: solid 2px var(--company);
+}
+#mobileMenuLinks li:last-of-type {
+    border-top: solid 1px var(--company);
+    border-bottom: solid 2px var(--company);
+    border-left: solid 2px var(--company);
+    border-right: solid 2px var(--company);
 }
 
 .wrapper {
