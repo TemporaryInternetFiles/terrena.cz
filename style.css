@@ -279,12 +279,22 @@ video {
 }
 
 #blog .wrapper {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.65);
     z-index: 7310;
 }
 
-#blog .wrapper pre {
+#blog .wrapper p {
+    font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
+    font-size: 0.85em;
+    text-align: left;
+}
+
+#blog .wrapper a:link, #blog .wrapper a:visited {
+    color: var(--company);
+}
+#blog .wrapper a:hover {
+    color: var(--blue);
 }
 
 #footer {
