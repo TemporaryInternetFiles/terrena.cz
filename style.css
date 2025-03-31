@@ -338,6 +338,10 @@ video {
     color: var(--company);
 }
 
+#footer .small {
+    font-size: 0.8em;
+}
+
 .leftAlign {
     text-align: left;
 }
